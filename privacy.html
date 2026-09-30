@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BeerRater – polityka prywatności</title>
+<style>
+  body { font-family: system-ui, -apple-system, Arial, sans-serif; max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; color: #292524; line-height: 1.6; background: #fffbeb; }
+  h1 { color: #b45309; font-size: 1.6rem; margin-bottom: 0; }
+  h2 { color: #78350f; font-size: 1.15rem; margin-top: 2rem; }
+  .date { color: #78716c; margin-top: .25rem; }
+  a { color: #b45309; }
+  hr { border: 0; border-top: 1px solid #fcd34d; margin: 2.5rem 0; }
+</style>
+</head>
+<body>
+
+<h1>BeerRater – polityka prywatności</h1>
+<p class="date">Obowiązuje od 30 września 2026 r.</p>
+
+<p>BeerRater (pakiet <code>com.beagleappsstudio.beerrater</code>) to aplikacja do oceniania piw, tworzona przez Beagleapps. Aplikacja nie wymaga zakładania konta, nie wyświetla reklam i nie korzysta z narzędzi analitycznych ani śledzących.</p>
+
+<h2>1. Dane przechowywane tylko na Twoim urządzeniu</h2>
+<p>Twoje oceny, notatki, ulubione piwa, piwa dodane do własnej bazy oraz miniatury zdjęć etykiet są zapisywane wyłącznie w pamięci aplikacji na Twoim telefonie. Nie wysyłamy ich na żaden serwer. Usuniesz je, czyszcząc dane aplikacji albo ją odinstalowując. Możesz je też wyeksportować do pliku funkcją eksportu w aplikacji.</p>
+
+<h2>2. Dane wysyłane przy korzystaniu z funkcji AI</h2>
+<p>Tylko gdy sam uruchomisz daną funkcję:</p>
+<ul>
+  <li><strong>Skaner etykiet</strong> – wybrane lub zrobione zdjęcie etykiety jest wysyłane do naszego serwera pośredniczącego (Cloudflare Workers), a stamtąd do usługi rozpoznawania obrazu Google Gemini (w razie jej niedostępności – do modeli udostępnianych przez OpenRouter). Zdjęcie służy wyłącznie do odczytania tekstu z etykiety.</li>
+  <li><strong>Wyszukiwanie danych o piwie</strong> – nazwa piwa, browaru i styl odczytane z etykiety są wysyłane do Google Gemini z wyszukiwarką Google, aby znaleźć brakujące informacje.</li>
+  <li><strong>Tłumaczenie opisu</strong> – angielski opis piwa z katalogu aplikacji jest wysyłany do modeli językowych przez OpenRouter.</li>
+</ul>
+<p>Nasz serwer nie zapisuje zdjęć ani tekstów – przekazuje je dalej i zwraca wynik. Serwer Cloudflare, jak każdy serwer internetowy, technicznie przetwarza adres IP urządzenia i podstawowe dane żądania (np. czas, rozmiar), a nasze dzienniki zawierają jedynie komunikaty techniczne (np. informację o błędzie), bez treści zdjęć. Dane przekazane do Google i OpenRouter podlegają ich zasadom:</p>
+<ul>
+  <li>Google Gemini API: <a href="https://ai.google.dev/gemini-api/terms">ai.google.dev/gemini-api/terms</a></li>
+  <li>OpenRouter: <a href="https://openrouter.ai/privacy">openrouter.ai/privacy</a></li>
+  <li>Cloudflare: <a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></li>
+</ul>
+<p>Nie fotografuj etykiet tak, by na zdjęciu znalazły się osoby lub dane, których nie chcesz przekazywać – aplikacja wysyła całe wybrane zdjęcie.</p>
+
+<h2>3. Uprawnienia</h2>
+<ul>
+  <li><strong>Aparat / zdjęcia</strong> – do sfotografowania etykiety lub wybrania zdjęcia z galerii (tylko po Twoim działaniu).</li>
+  <li><strong>Internet</strong> – do funkcji AI opisanych wyżej.</li>
+</ul>
+
+<h2>4. Dzieci</h2>
+<p>Aplikacja dotyczy piwa i jest przeznaczona dla osób pełnoletnich.</p>
+
+<h2>5. Kontakt</h2>
+<p>Pytania dotyczące prywatności: <a href="mailto:beagleappsstudio@gmail.com">beagleappsstudio@gmail.com</a> · <a href="https://beagleapps.pl">beagleapps.pl</a></p>
+
+<h2>6. Zmiany</h2>
+<p>O zmianach polityki informujemy, aktualizując tę stronę i datę na górze.</p>
+
+<hr>
+
+<h1>BeerRater – Privacy Policy</h1>
+<p class="date">Effective 30 September 2026</p>
+<p>BeerRater (<code>com.beagleappsstudio.beerrater</code>) is a beer rating app made by Beagleapps. It requires no account, shows no ads and uses no analytics or tracking.</p>
+<p><strong>On your device only:</strong> ratings, notes, favourites, your own beers and label thumbnails are stored locally and never uploaded.</p>
+<p><strong>AI features (only when you use them):</strong> a label photo you take or pick is sent through our relay server (Cloudflare Workers) to Google Gemini (or, as a fallback, models via OpenRouter) to read the label; the beer, brewery and style names are sent to Google Gemini with Google Search to look up missing details; English beer descriptions are sent via OpenRouter for translation. Our server does not store photos or texts. Cloudflare technically processes your IP address and basic request data. Google, OpenRouter and Cloudflare process data under their own policies (links above).</p>
+<p><strong>Permissions:</strong> camera/photos (to capture or pick a label, only on your action) and internet (for the AI features).</p>
+<p>The app is intended for adults of legal drinking age. Contact: <a href="mailto:beagleappsstudio@gmail.com">beagleappsstudio@gmail.com</a>.</p>
+
+</body>
+</html>
