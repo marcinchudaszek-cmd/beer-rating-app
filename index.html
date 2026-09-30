@@ -2,12 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>🍺 BeerRater – Oceń swoje piwo</title>
     <meta name="description" content="Aplikacja do oceniania piwa, przeglądania składników, historii i ciekawostek o piwach." />
-  </head>
+    <script>
+      // Motyw przed startem Reacta — useTheme ustawia .dark dopiero w useEffect,
+      // po pierwszym malowaniu, co dawało biały błysk w ciemnym motywie.
+      // Ta sama logika co w src/hooks/useTheme.ts.
+      try {
+        var stored = localStorage.getItem('theme');
+        var dark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (dark) document.documentElement.classList.add('dark');
+      } catch (e) { /* localStorage zablokowany — zostaje jasny motyw */ }
+    </script>
+    <script type="module" crossorigin src="/beer-rating-app/assets/index-CGszneXW.js"></script>
+    <link rel="stylesheet" crossorigin href="/beer-rating-app/assets/index-siTweuBv.css">
+  <link rel="manifest" href="/beer-rating-app/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/beer-rating-app/registerSW.js"></script></head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

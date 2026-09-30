@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">BeerRater</string>
-    <string name="title_activity_main">BeerRater</string>
-    <string name="package_name">com.beagleappsstudio.beerrater</string>
-    <string name="custom_url_scheme">com.beagleappsstudio.beerrater</string>
-</resources>
