@@ -1,0 +1,3 @@
+TwemojiCountryFlags.woff2 — z pakietu country-flag-emoji-polyfill (MIT, TalkJS).
+Grafiki flag: Twemoji, © Twitter, Inc. i współtwórcy, licencja CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+Czcionka wczytuje się tylko w przeglądarkach bez własnych flag (Chrome/Edge na Windowsie).
